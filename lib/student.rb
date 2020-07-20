@@ -18,6 +18,7 @@ end
     attributes_hash.each do |attr, value|
       self.send("#{attr}=", value)
   end
+  self
 end
 
   def self.all
